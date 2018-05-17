@@ -33,6 +33,7 @@ class chooseSongViewController: UIViewController {
         songName=sender.titleLabel!.text!
                 print("INSIDE CHOOSE SONG")
                 print(songName)
+        performSegue(withIdentifier: "aboutToRock", sender: self)
     }
     
 //
@@ -43,12 +44,12 @@ class chooseSongViewController: UIViewController {
 //        performSegue(withIdentifier: "aboutToRock", sender: self)
 //    }
 //
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "aboutToRock" {
-//            let rockinView = segue.destination as! rockinViewController
-//            rockinView.songName = songName
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "aboutToRock" {
+            let rockinView = segue.destination as! rockinViewController
+            rockinView.songName = songName
+        }
+    }
     
     
     /*

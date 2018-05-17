@@ -103,6 +103,7 @@
                                         </state>
                                         <connections>
                                             <action selector="songPressed:" destination="WFJ-OO-bjI" eventType="touchUpInside" id="S4i-1O-f0V"/>
+                                            <segue destination="jGI-IT-cR1" kind="show" identifier="aboutToRock" id="IXV-oa-bNq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiU-2x-3ci">
@@ -194,6 +195,16 @@
                     <view key="view" contentMode="scaleToFill" id="7ik-f8-vwe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Fl-JJV">
+                                <rect key="frame" x="164" y="152" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="pressDismiss:" destination="jGI-IT-cR1" eventType="touchUpInside" id="frn-E2-7We"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.090196078431372548" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="f2q-vz-UdQ"/>
                     </view>
