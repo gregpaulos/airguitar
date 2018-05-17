@@ -10,7 +10,7 @@ import UIKit
 
 class chooseSongViewController: UIViewController {
 
-    var songName = "PRACTICE"
+    var songName = ""
     
     @IBAction func homePressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

@@ -97,7 +97,6 @@
                                         </state>
                                         <connections>
                                             <action selector="songPressed:" destination="WFJ-OO-bjI" eventType="touchUpInside" id="S4i-1O-f0V"/>
-                                            <segue destination="jGI-IT-cR1" kind="show" identifier="aboutToRock" id="IXV-oa-bNq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiU-2x-3ci">
@@ -177,10 +176,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qKb-q0-ugS"/>
                     </view>
+                    <connections>
+                        <segue destination="jGI-IT-cR1" kind="show" identifier="aboutToRock" id="nkh-1j-oQ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftj-RB-9Qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="814.54272863568224"/>
+            <point key="canvasLocation" x="34" y="815"/>
         </scene>
         <!--Rockin View Controller-->
         <scene sceneID="oLZ-vX-nmh">
