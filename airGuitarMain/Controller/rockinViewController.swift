@@ -20,7 +20,7 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     @IBOutlet weak var handsProbabilityLabel: UILabel!
     
-    var songName = ""
+    var songName = "PRACTICE"
     
 //    var objPlayer: AVAudioPlayer?
 //
@@ -57,8 +57,6 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 //
 //
 //
-//    @IBOutlet weak var songTitle: UILabel!
-//
 //    @IBAction func chooseDifferentSongPressed(_ sender: UIButton) {
 //        objPlayer?.stop()
 //        if multiplePlayersAtOnce.count > 0 {
@@ -71,8 +69,6 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 //    }
 //
 //
-//    @IBOutlet weak var resultView: UILabel!
-//
 //    // vision request
 //    var visionRequests = [VNRequest]()
 //
@@ -83,7 +79,8 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         print("JUST GOT HERE")
         print(songName)
         
-//        songTitle.text = songName
+        songNameLabel.text = songName
+        
 //DELETE THESE TWO CURLIES BEFORE DOING OTHER STUFF
         }
     }
