@@ -26,35 +26,30 @@ class chooseSongViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
   
-    @IBAction func song1pressed(_ sender: UIButton) {
-        songName=sender.titleLabel!.text!
-        performSegue(withIdentifier: "aboutToRock", sender: self)
-    }
-    
-    @IBAction func song2pressed(_ sender: UIButton) {
-        songName=sender.titleLabel!.text!
-//        if let songName = sender.titleLabel?.text {
-//            print(songName)
-//        }
-        performSegue(withIdentifier: "aboutToRock", sender: self)
-    }
-  
-    @IBAction func song3pressed(_ sender: UIButton) {
-        songName=sender.titleLabel!.text!
-        performSegue(withIdentifier: "aboutToRock", sender: self)
-    }
+
     
     @IBAction func songPressed(_ sender: UIButton) {
+        print("PRESSED")
         songName=sender.titleLabel!.text!
-        performSegue(withIdentifier: "aboutToRock", sender: self)
+                print("INSIDE CHOOSE SONG")
+                print(songName)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "aboutToRock" {
-            let rockinView = segue.destination as! rockinViewController
-            rockinView.songName = songName
-        }
-    }
+//
+//    @IBAction func songPressed(_ sender: UIButton) {
+//        songName=sender.titleLabel!.text!
+//        print("INSIDE CHOOSE SONG")
+//        print(songName)
+//        performSegue(withIdentifier: "aboutToRock", sender: self)
+//    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "aboutToRock" {
+//            let rockinView = segue.destination as! rockinViewController
+//            rockinView.songName = songName
+//        }
+//    }
+    
     
     /*
     // MARK: - Navigation
