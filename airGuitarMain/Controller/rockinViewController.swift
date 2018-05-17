@@ -16,6 +16,10 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         dismiss(animated: true, completion: nil)
     }
     
+    @IBOutlet weak var songNameLabel: UILabel!
+    
+    @IBOutlet weak var handsProbabilityLabel: UILabel!
+    
     var songName = ""
     
 //    var objPlayer: AVAudioPlayer?
