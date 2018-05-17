@@ -12,6 +12,15 @@
 		0373EAE920AE002900AD72E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0373EAE720AE002900AD72E1 /* Main.storyboard */; };
 		0373EAEB20AE002900AD72E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0373EAEA20AE002900AD72E1 /* Assets.xcassets */; };
 		0373EAEE20AE002900AD72E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0373EAEC20AE002900AD72E1 /* LaunchScreen.storyboard */; };
+		0373EAFF20AE03EB00AD72E1 /* tutorialStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAF820AE03EB00AD72E1 /* tutorialStep3ViewController.swift */; };
+		0373EB0020AE03EB00AD72E1 /* tutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAF920AE03EB00AD72E1 /* tutorialController.swift */; };
+		0373EB0120AE03EB00AD72E1 /* tutorialStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAFA20AE03EB00AD72E1 /* tutorialStep2ViewController.swift */; };
+		0373EB0220AE03EB00AD72E1 /* chooseSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAFB20AE03EB00AD72E1 /* chooseSongViewController.swift */; };
+		0373EB0320AE03EB00AD72E1 /* requestNewSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAFC20AE03EB00AD72E1 /* requestNewSongViewController.swift */; };
+		0373EB0420AE03EB00AD72E1 /* tutorialStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAFD20AE03EB00AD72E1 /* tutorialStep4ViewController.swift */; };
+		0373EB0520AE03EB00AD72E1 /* rockinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373EAFE20AE03EB00AD72E1 /* rockinViewController.swift */; };
+		0373EB0920AE0A8D00AD72E1 /* handcropped.png in Resources */ = {isa = PBXBuildFile; fileRef = 0373EB0820AE0A8D00AD72E1 /* handcropped.png */; };
+		0373EB0B20AE0BD300AD72E1 /* secondHand.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0373EB0A20AE0BD300AD72E1 /* secondHand.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		0373EAEA20AE002900AD72E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0373EAED20AE002900AD72E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0373EAEF20AE002900AD72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0373EAF820AE03EB00AD72E1 /* tutorialStep3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialStep3ViewController.swift; sourceTree = "<group>"; };
+		0373EAF920AE03EB00AD72E1 /* tutorialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialController.swift; sourceTree = "<group>"; };
+		0373EAFA20AE03EB00AD72E1 /* tutorialStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialStep2ViewController.swift; sourceTree = "<group>"; };
+		0373EAFB20AE03EB00AD72E1 /* chooseSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseSongViewController.swift; sourceTree = "<group>"; };
+		0373EAFC20AE03EB00AD72E1 /* requestNewSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestNewSongViewController.swift; sourceTree = "<group>"; };
+		0373EAFD20AE03EB00AD72E1 /* tutorialStep4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialStep4ViewController.swift; sourceTree = "<group>"; };
+		0373EAFE20AE03EB00AD72E1 /* rockinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rockinViewController.swift; sourceTree = "<group>"; };
+		0373EB0820AE0A8D00AD72E1 /* handcropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handcropped.png; sourceTree = "<group>"; };
+		0373EB0A20AE0BD300AD72E1 /* secondHand.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = secondHand.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,47 @@
 		0373EAE220AE002900AD72E1 /* airGuitarMain */ = {
 			isa = PBXGroup;
 			children = (
+				0373EAF520AE035B00AD72E1 /* Model */,
+				0373EAF620AE036100AD72E1 /* View */,
+				0373EAF720AE036700AD72E1 /* Controller */,
 				0373EAE320AE002900AD72E1 /* AppDelegate.swift */,
-				0373EAE520AE002900AD72E1 /* ViewController.swift */,
-				0373EAE720AE002900AD72E1 /* Main.storyboard */,
 				0373EAEA20AE002900AD72E1 /* Assets.xcassets */,
+				0373EB0820AE0A8D00AD72E1 /* handcropped.png */,
 				0373EAEC20AE002900AD72E1 /* LaunchScreen.storyboard */,
 				0373EAEF20AE002900AD72E1 /* Info.plist */,
 			);
 			path = airGuitarMain;
+			sourceTree = "<group>";
+		};
+		0373EAF520AE035B00AD72E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0373EB0A20AE0BD300AD72E1 /* secondHand.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0373EAF620AE036100AD72E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0373EAE720AE002900AD72E1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0373EAF720AE036700AD72E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0373EAE520AE002900AD72E1 /* ViewController.swift */,
+				0373EAFB20AE03EB00AD72E1 /* chooseSongViewController.swift */,
+				0373EAFC20AE03EB00AD72E1 /* requestNewSongViewController.swift */,
+				0373EAFE20AE03EB00AD72E1 /* rockinViewController.swift */,
+				0373EAF920AE03EB00AD72E1 /* tutorialController.swift */,
+				0373EAFA20AE03EB00AD72E1 /* tutorialStep2ViewController.swift */,
+				0373EAF820AE03EB00AD72E1 /* tutorialStep3ViewController.swift */,
+				0373EAFD20AE03EB00AD72E1 /* tutorialStep4ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +176,7 @@
 			files = (
 				0373EAEE20AE002900AD72E1 /* LaunchScreen.storyboard in Resources */,
 				0373EAEB20AE002900AD72E1 /* Assets.xcassets in Resources */,
+				0373EB0920AE0A8D00AD72E1 /* handcropped.png in Resources */,
 				0373EAE920AE002900AD72E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0373EB0220AE03EB00AD72E1 /* chooseSongViewController.swift in Sources */,
+				0373EB0320AE03EB00AD72E1 /* requestNewSongViewController.swift in Sources */,
+				0373EB0520AE03EB00AD72E1 /* rockinViewController.swift in Sources */,
+				0373EB0B20AE0BD300AD72E1 /* secondHand.mlmodel in Sources */,
+				0373EAFF20AE03EB00AD72E1 /* tutorialStep3ViewController.swift in Sources */,
 				0373EAE620AE002900AD72E1 /* ViewController.swift in Sources */,
 				0373EAE420AE002900AD72E1 /* AppDelegate.swift in Sources */,
+				0373EB0420AE03EB00AD72E1 /* tutorialStep4ViewController.swift in Sources */,
+				0373EB0020AE03EB00AD72E1 /* tutorialController.swift in Sources */,
+				0373EB0120AE03EB00AD72E1 /* tutorialStep2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
