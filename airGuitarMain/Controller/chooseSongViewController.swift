@@ -27,7 +27,6 @@ class chooseSongViewController: UIViewController {
     }
   
 
-    
     @IBAction func songPressed(_ sender: UIButton) {
         print("PRESSED")
         songName=sender.titleLabel!.text!
@@ -36,30 +35,10 @@ class chooseSongViewController: UIViewController {
         performSegue(withIdentifier: "aboutToRock", sender: self)
     }
     
-//
-//    @IBAction func songPressed(_ sender: UIButton) {
-//        songName=sender.titleLabel!.text!
-//        print("INSIDE CHOOSE SONG")
-//        print(songName)
-//        performSegue(withIdentifier: "aboutToRock", sender: self)
-//    }
-//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "aboutToRock" {
             let rockinView = segue.destination as! rockinViewController
             rockinView.songName = songName
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
