@@ -58,6 +58,7 @@
 		03E26B9520AF70C300D20B37 /* E power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9020AF70C200D20B37 /* E power.mp3 */; };
 		03E26B9620AF70C300D20B37 /* Sabbie1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */; };
 		03E26B9720AF70C300D20B37 /* Sabbie2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */; };
+		03E26B9B20AF768000D20B37 /* soloChop1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9A20AF768000D20B37 /* soloChop1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,7 @@
 		03E26B9020AF70C200D20B37 /* E power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "E power.mp3"; sourceTree = "<group>"; };
 		03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sabbie1.mp3; sourceTree = "<group>"; };
 		03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sabbie2.mp3; sourceTree = "<group>"; };
+		03E26B9A20AF768000D20B37 /* soloChop1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soloChop1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */,
 				03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */,
 				03E26B8F20AF70C200D20B37 /* Sabbie3.mp3 */,
+				03E26B9A20AF768000D20B37 /* soloChop1.mp3 */,
 				03E26B6D20AF6BFA00D20B37 /* soloChop2.mp3 */,
 				03E26B5A20AF6BF700D20B37 /* soloChop3.mp3 */,
 				03E26B6620AF6BF900D20B37 /* soloChop4.mp3 */,
@@ -296,6 +299,7 @@
 				03E26B9720AF70C300D20B37 /* Sabbie2.mp3 in Resources */,
 				03E26B8C20AF6BFB00D20B37 /* soloChop9.mp3 in Resources */,
 				03E26B8020AF6BFB00D20B37 /* weirdnotes2.mp3 in Resources */,
+				03E26B9B20AF768000D20B37 /* soloChop1.mp3 in Resources */,
 				03E26B9620AF70C300D20B37 /* Sabbie1.mp3 in Resources */,
 				03E26B8120AF6BFB00D20B37 /* soloChop7.mp3 in Resources */,
 				03E26B7E20AF6BFA00D20B37 /* weirdnotes3.mp3 in Resources */,
