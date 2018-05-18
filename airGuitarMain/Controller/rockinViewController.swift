@@ -26,20 +26,7 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     var chordCount = 0
     
-    let practiceChords = [Bundle.main.url(forResource: "D power", withExtension: "mp3"), Bundle.main.url(forResource: "E power", withExtension: "mp3")]
-    
-    let blackSabbath = [Bundle.main.url(forResource: "Sabbie1", withExtension: "mp3"), Bundle.main.url(forResource: "Sabbie2", withExtension: "mp3"), Bundle.main.url(forResource: "Sabbie3", withExtension: "mp3")]
-    
-    
-    let funky = [Bundle.main.url(forResource: "funkyLowE", withExtension: "mp3"), Bundle.main.url(forResource: "eminorwah", withExtension: "mp3"), Bundle.main.url(forResource: "funkyLowE", withExtension: "mp3"), Bundle.main.url(forResource: "dmajwah", withExtension: "mp3"), Bundle.main.url(forResource: "funkyLowE", withExtension: "mp3"),Bundle.main.url(forResource: "scratchy", withExtension: "mp3"),]
-    
-    let welcome = [Bundle.main.url(forResource: "jungleopenfinal", withExtension: "mp3"), Bundle.main.url(forResource: "jungleopenfinal", withExtension: "mp3"), Bundle.main.url(forResource: "junglelickfinal", withExtension: "mp3"), Bundle.main.url(forResource: "junglelickfinal", withExtension: "mp3"), Bundle.main.url(forResource: "junglelickfinal", withExtension: "mp3"),Bundle.main.url(forResource: "junglelickfinal", withExtension: "mp3"),]
-    
-    let weird = [Bundle.main.url(forResource: "weirdDroneLouder", withExtension: "mp3"), Bundle.main.url(forResource: "weirdnotes1", withExtension: "mp3"), Bundle.main.url(forResource: "weirdnotes2", withExtension: "mp3"), Bundle.main.url(forResource: "weirdnotes3", withExtension: "mp3"), Bundle.main.url(forResource: "soloChop1", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop2", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop3", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop4", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop5", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop6", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop7", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop8", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop9", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop10", withExtension: "mp3"),Bundle.main.url(forResource: "soloChop11", withExtension: "mp3"),]
-    
-    
-    let solo = [Bundle.main.url(forResource: "eSolo1", withExtension: "mp3"), Bundle.main.url(forResource: "eSolo2", withExtension: "mp3"), Bundle.main.url(forResource: "eSolo1", withExtension: "mp3"), Bundle.main.url(forResource: "eSolo20", withExtension: "mp3"), Bundle.main.url(forResource: "eSolo1", withExtension: "mp3"), Bundle.main.url(forResource: "eSolo5", withExtension: "mp3"),Bundle.main.url(forResource: "eSolo7", withExtension: "mp3"),Bundle.main.url(forResource: "eSolo8", withExtension: "mp3")]
-
+ 
     
     @IBAction func pressDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -241,9 +228,8 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         notHandAfterHand = 0
         print("YES MOTHAS! \(count)")
         print(songName)
-//        guard let url = Bundle.main.url(forResource: "echord", withExtension: "wav") else { return }
         // for first if block allow multiple audio players at once, else allow only one at a time
-        guard var url = Bundle.main.url(forResource: "dmajwah", withExtension: "mp3") else { return }
+        guard var url = Bundle.main.url(forResource: "echord", withExtension: "wav") else { return }
         
         let songPattern = allSongs.dictOfSongs[songName]!.songPattern
         
@@ -283,40 +269,6 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
         
         
-        
-        if songName == "PRACTICE" {
-            print("wassup")
-        //                if chordCount == 0 {
-        //                    url = practiceChords[chordCount]!
-        //                    chordCount = 1
-        //
-        //                }
-        //                else {
-        //                    url = practiceChords[chordCount]!
-        //                    chordCount = 0
-        //                }
-            do {
-                                objPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-                                objPlayer?.prepareToPlay()
-                
-                
-                                let audioSession = AVAudioSession.sharedInstance()
-                                do {
-                                    try audioSession.setCategory(AVAudioSessionCategoryPlayback)
-                                } catch let sessionError {
-                                    print(sessionError)
-                                }
-                
-                
-                
-                                objPlayer?.play()
-                
-                            } catch let error {
-                                print(error.localizedDescription)
-                            }
-                
-            
-        }
 //        ourSongs[songName]
 //        if songName == "SOLO!!!!" || songName == "FUNK 'N STUFF" || songName == "FAREWELL JUNGLE" || songName == "GET WEIRD" {
 //            print("FIRST IF BLOCK")

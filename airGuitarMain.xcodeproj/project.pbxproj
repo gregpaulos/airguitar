@@ -53,6 +53,11 @@
 		03E26B8B20AF6BFB00D20B37 /* echord.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B6E20AF6BFA00D20B37 /* echord.wav */; };
 		03E26B8C20AF6BFB00D20B37 /* soloChop9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B6F20AF6BFA00D20B37 /* soloChop9.mp3 */; };
 		03E26B8D20AF6BFB00D20B37 /* jungleopenfinal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B7020AF6BFA00D20B37 /* jungleopenfinal.mp3 */; };
+		03E26B9320AF70C300D20B37 /* D power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B8E20AF70C200D20B37 /* D power.mp3 */; };
+		03E26B9420AF70C300D20B37 /* Sabbie3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B8F20AF70C200D20B37 /* Sabbie3.mp3 */; };
+		03E26B9520AF70C300D20B37 /* E power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9020AF70C200D20B37 /* E power.mp3 */; };
+		03E26B9620AF70C300D20B37 /* Sabbie1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */; };
+		03E26B9720AF70C300D20B37 /* Sabbie2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +109,11 @@
 		03E26B6E20AF6BFA00D20B37 /* echord.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = echord.wav; sourceTree = "<group>"; };
 		03E26B6F20AF6BFA00D20B37 /* soloChop9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soloChop9.mp3; sourceTree = "<group>"; };
 		03E26B7020AF6BFA00D20B37 /* jungleopenfinal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jungleopenfinal.mp3; sourceTree = "<group>"; };
+		03E26B8E20AF70C200D20B37 /* D power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "D power.mp3"; sourceTree = "<group>"; };
+		03E26B8F20AF70C200D20B37 /* Sabbie3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sabbie3.mp3; sourceTree = "<group>"; };
+		03E26B9020AF70C200D20B37 /* E power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "E power.mp3"; sourceTree = "<group>"; };
+		03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sabbie1.mp3; sourceTree = "<group>"; };
+		03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sabbie2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,11 @@
 				03E26B5C20AF6BF700D20B37 /* junglelickfinal.mp3 */,
 				03E26B7020AF6BFA00D20B37 /* jungleopenfinal.mp3 */,
 				03E26B5F20AF6BF800D20B37 /* scratchy.mp3 */,
+				03E26B8E20AF70C200D20B37 /* D power.mp3 */,
+				03E26B9020AF70C200D20B37 /* E power.mp3 */,
+				03E26B9120AF70C300D20B37 /* Sabbie1.mp3 */,
+				03E26B9220AF70C300D20B37 /* Sabbie2.mp3 */,
+				03E26B8F20AF70C200D20B37 /* Sabbie3.mp3 */,
 				03E26B6D20AF6BFA00D20B37 /* soloChop2.mp3 */,
 				03E26B5A20AF6BF700D20B37 /* soloChop3.mp3 */,
 				03E26B6620AF6BF900D20B37 /* soloChop4.mp3 */,
@@ -278,14 +293,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E26B9720AF70C300D20B37 /* Sabbie2.mp3 in Resources */,
 				03E26B8C20AF6BFB00D20B37 /* soloChop9.mp3 in Resources */,
 				03E26B8020AF6BFB00D20B37 /* weirdnotes2.mp3 in Resources */,
+				03E26B9620AF70C300D20B37 /* Sabbie1.mp3 in Resources */,
 				03E26B8120AF6BFB00D20B37 /* soloChop7.mp3 in Resources */,
 				03E26B7E20AF6BFA00D20B37 /* weirdnotes3.mp3 in Resources */,
 				03E26B8820AF6BFB00D20B37 /* eSolo3.mp3 in Resources */,
 				03E26B7220AF6BFA00D20B37 /* soloChop5.mp3 in Resources */,
 				03E26B8D20AF6BFB00D20B37 /* jungleopenfinal.mp3 in Resources */,
 				03E26B7520AF6BFA00D20B37 /* funkyLowE.mp3 in Resources */,
+				03E26B9520AF70C300D20B37 /* E power.mp3 in Resources */,
 				03E26B7A20AF6BFA00D20B37 /* eSolo2.mp3 in Resources */,
 				03E26B8320AF6BFB00D20B37 /* soloChop4.mp3 in Resources */,
 				03E26B7320AF6BFA00D20B37 /* eSolo7.mp3 in Resources */,
@@ -308,8 +326,10 @@
 				03E26B8520AF6BFB00D20B37 /* soloChop11.mp3 in Resources */,
 				03E26B8A20AF6BFB00D20B37 /* soloChop2.mp3 in Resources */,
 				03E26B8B20AF6BFB00D20B37 /* echord.wav in Resources */,
+				03E26B9420AF70C300D20B37 /* Sabbie3.mp3 in Resources */,
 				03E26B7720AF6BFA00D20B37 /* soloChop3.mp3 in Resources */,
 				0373EAE920AE002900AD72E1 /* Main.storyboard in Resources */,
+				03E26B9320AF70C300D20B37 /* D power.mp3 in Resources */,
 				03E26B7B20AF6BFA00D20B37 /* eSolo4.mp3 in Resources */,
 				03E26B7120AF6BFA00D20B37 /* eSolo5.mp3 in Resources */,
 			);
