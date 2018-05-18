@@ -29,6 +29,13 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
  
     
     @IBAction func pressDismiss(_ sender: Any) {
+        objPlayer?.stop()
+        if multiplePlayersAtOnce.count > 0 {
+            for player in multiplePlayersAtOnce {
+                player.stop()
+            }
+        }
+        session.stopRunning()
         dismiss(animated: true, completion: nil)
     }
     
@@ -46,18 +53,18 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         // preview view - we'll add the previewLayer to this later
 
 
-
-
-    @IBAction func chooseDifferentSongPressed(_ sender: UIButton) {
-        objPlayer?.stop()
-        if multiplePlayersAtOnce.count > 0 {
-            for player in multiplePlayersAtOnce {
-                player.stop()
-            }
-        }
-        session.stopRunning()
-        dismiss(animated: true, completion: nil)
-    }
+//
+//
+//    @IBAction func chooseDifferentSongPressed(_ sender: UIButton) {
+//        objPlayer?.stop()
+//        if multiplePlayersAtOnce.count > 0 {
+//            for player in multiplePlayersAtOnce {
+//                player.stop()
+//            }
+//        }
+//        session.stopRunning()
+//        dismiss(animated: true, completion: nil)
+//    }
 
 
     // vision request
