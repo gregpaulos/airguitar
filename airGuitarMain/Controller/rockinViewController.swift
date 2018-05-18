@@ -14,6 +14,8 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     var songName = ""
     
+    let allSongs = Songs()
+    
     var objPlayer: AVAudioPlayer?
     
     var multiplePlayersAtOnce = [AVAudioPlayer]()
@@ -80,6 +82,7 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
         print("JUST GOT HERE")
         print(songName)
+        print(allSongs.dictOfSongs[songName]!.songPattern)
         
         songNameLabel.text = songName
         
@@ -241,6 +244,46 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 //        guard let url = Bundle.main.url(forResource: "echord", withExtension: "wav") else { return }
         // for first if block allow multiple audio players at once, else allow only one at a time
         guard var url = Bundle.main.url(forResource: "dmajwah", withExtension: "mp3") else { return }
+        
+        let songPattern = allSongs.dictOfSongs[songName]!.songPattern
+        
+        if chordCount >= songPattern.count {
+                                chordCount = 0
+                                url = songPattern[chordCount]
+                                print(chordCount)
+                                chordCount += 1
+            
+                            }
+                            else {
+                                url = songPattern[chordCount]
+                                print(chordCount)
+                                chordCount += 1
+                            }
+        
+        do {
+            objPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            objPlayer?.prepareToPlay()
+            
+            
+            let audioSession = AVAudioSession.sharedInstance()
+            do {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            } catch let sessionError {
+                print(sessionError)
+            }
+            
+            
+            
+            objPlayer?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        
+        
         if songName == "PRACTICE" {
             print("wassup")
         //                if chordCount == 0 {
@@ -274,6 +317,7 @@ class rockinViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 
             
         }
+//        ourSongs[songName]
 //        if songName == "SOLO!!!!" || songName == "FUNK 'N STUFF" || songName == "FAREWELL JUNGLE" || songName == "GET WEIRD" {
 //            print("FIRST IF BLOCK")
 //            guard var url = Bundle.main.url(forResource: "Sabbie1", withExtension: "mp3") else { return }
