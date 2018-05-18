@@ -148,7 +148,6 @@
 		0373EAE220AE002900AD72E1 /* airGuitarMain */ = {
 			isa = PBXGroup;
 			children = (
-				0373EB0C20AE235700AD72E1 /* Sound Files */,
 				0373EAF520AE035B00AD72E1 /* Model */,
 				0373EAF620AE036100AD72E1 /* View */,
 				0373EAF720AE036700AD72E1 /* Controller */,
@@ -167,6 +166,7 @@
 				0373EB0A20AE0BD300AD72E1 /* secondHand.mlmodel */,
 				03E26B5020AF636200D20B37 /* songs.swift */,
 				03E26B5220AF63D200D20B37 /* song.swift */,
+				0373EB0C20AE235700AD72E1 /* Sound Files */,
 			);
 			path = Model;
 			sourceTree = "<group>";
