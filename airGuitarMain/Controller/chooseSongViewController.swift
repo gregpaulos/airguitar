@@ -28,10 +28,7 @@ class chooseSongViewController: UIViewController {
   
 
     @IBAction func songPressed(_ sender: UIButton) {
-        print("PRESSED")
         songName=sender.titleLabel!.text!
-                print("INSIDE CHOOSE SONG")
-                print(songName)
         performSegue(withIdentifier: "aboutToRock", sender: self)
     }
     
