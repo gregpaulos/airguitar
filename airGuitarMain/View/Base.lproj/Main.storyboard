@@ -160,9 +160,6 @@
                                         <state key="normal" title="Request New Song">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="ko0-yw-IG6" kind="show" id="RYV-VT-cNB"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -236,30 +233,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWh-xt-zvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="814.54272863568224"/>
-        </scene>
-        <!--Request New Song View Controller-->
-        <scene sceneID="nSP-o2-VPN">
-            <objects>
-                <viewController id="ko0-yw-IG6" customClass="requestNewSongViewController" customModule="airGuitarMain" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NVk-Ee-GBu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ez-Jv-DLl">
-                                <rect key="frame" x="133" y="571" width="127" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back To Songs">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.090196078431372548" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="xOs-Dz-JD1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RbY-q6-Mt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="1569.265367316342"/>
         </scene>
         <!--Tutorial Controller-->
         <scene sceneID="KdO-ww-BV3">
